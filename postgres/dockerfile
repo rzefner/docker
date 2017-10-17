@@ -1,0 +1,5 @@
+from postgres:9.5
+
+
+volume /var/lib/postgresql/data
+copy ./init-db.sql postgres:/docker-entrypoint-initdb.d/
